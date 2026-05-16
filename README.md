@@ -97,14 +97,14 @@ google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
 上线后你必须把 `pub-XXXXXXXXXXXXXXXX` 替换成自己的真实 Publisher ID，再确保网站根路径下可以直接访问：
 
 ```text
-https://your-domain.example/ads.txt
+https://oceanarcadegame.com/ads.txt
 ```
 
 ## SEO 基础文件
 
 - `robots.txt` 已添加站点地图入口占位
 - `sitemap.xml` 已添加基础页面清单占位
-- 上线后请把其中的 `https://your-domain.example` 替换为你的真实域名
+- 当前示例域名已更新为 `https://oceanarcadegame.com`
 
 ## 开源许可证说明
 
@@ -120,12 +120,12 @@ https://your-domain.example/ads.txt
 - 不要自己点击自己网站上的广告
 - 不要让广告紧贴游戏区域
 - 建议保持广告位与游戏区域至少 150px 的安全距离
-- 正式上线前，请把示例域名、canonical URL、联系邮箱和 AdSense Publisher ID 全部替换为真实信息
+- 正式上线前，请确认 `oceanarcadegame.com` 已正确解析、联系邮箱可用，并填入真实 AdSense Publisher ID
 
 ## 上线前需要手动替换的内容
 
-- `https://your-domain.example/...` 这类 canonical 和 Open Graph URL 占位
-- `hello@your-domain.example` 联系邮箱
+- 如有需要，继续微调 `https://oceanarcadegame.com/...` 相关 canonical 和 Open Graph URL
+- `hello@oceanarcadegame.com` 邮箱是否已真实可用
 - `pub-XXXXXXXXXXXXXXXX` AdSense Publisher ID
 - 如果你计划使用真实广告单元，还需要把广告占位块替换成实际广告代码
 

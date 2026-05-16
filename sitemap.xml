@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain.example/</loc>
+    <loc>https://oceanarcadegame.com/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/game/</loc>
+    <loc>https://oceanarcadegame.com/game/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/about/</loc>
+    <loc>https://oceanarcadegame.com/about/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/privacy/</loc>
+    <loc>https://oceanarcadegame.com/privacy/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/terms/</loc>
+    <loc>https://oceanarcadegame.com/terms/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/contact/</loc>
+    <loc>https://oceanarcadegame.com/contact/</loc>
   </url>
   <url>
-    <loc>https://your-domain.example/license.html</loc>
+    <loc>https://oceanarcadegame.com/license.html</loc>
   </url>
 </urlset>
