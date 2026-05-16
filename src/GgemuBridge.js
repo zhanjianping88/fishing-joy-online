@@ -90,12 +90,17 @@ const GgemuBridge = {
         const { protocol, origin, hostname } = window.location;
         const isHttp = protocol === 'http:' || protocol === 'https:';
         const isLocal = hostname === 'localhost' || hostname === '127.0.0.1';
+        const config = window.SITE_CONFIG || {};
 
-        if (isLocal) {
+        if (config.ggemuSdkUrl) {
+            urls.push(config.ggemuSdkUrl);
+        }
+
+        if (isLocal && !config.preferRemoteSdk) {
             urls.push('http://localhost:3000/api/ggemu-sdk.js');
         }
 
-        if (isHttp) {
+        if (isHttp && !config.preferRemoteSdk) {
             urls.push(`${origin}/api/ggemu-sdk.js`);
         }
 

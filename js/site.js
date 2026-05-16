@@ -44,16 +44,23 @@
         footerTarget.innerHTML = `
             <footer class="site-footer">
                 <div class="footer-inner">
+                    <div class="footer-brand">
+                        <span class="brand-mark">OA</span>
+                        <span class="brand-copy">
+                            <strong>Ocean Arcade Game</strong>
+                            <span>Ocean blue browser arcade portal</span>
+                        </span>
+                    </div>
                     <div class="footer-links">
                         ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
                     </div>
                     <p class="footer-note">
-                        Ocean Arcade Game is built around the open source project
+                        Ocean Arcade Game keeps browser play front and center, gives support content room to breathe, and preserves the original open source attribution for
                         <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a>
-                        and keeps the original MIT license notice and attribution.
+                        on the license page.
                     </p>
                     <p class="footer-meta">
-                        &copy; <span id="footer-year"></span> Ocean Arcade Game. License details are available on the license page.
+                        &copy; <span id="footer-year"></span> Ocean Arcade Game. Free browser fishing runs, arcade side routes, and readable ad-safe layouts.
                     </p>
                 </div>
             </footer>

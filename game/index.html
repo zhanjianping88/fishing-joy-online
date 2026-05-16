@@ -3,23 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="ZCUhjII5VFWC_DsSOIQmp7uOAihtXoQKKwj-NRClN0U" />
-    <title>Ocean Arcade Game | Play the Fishing Game</title>
-    <meta name="description" content="Play the Ocean Arcade Game fishing experience in your browser with responsive controls, clear layout spacing, and a dedicated game page.">
+    <meta name="google-site-verification" content="ZCUhjII5VFWC_DsSOIQmp7uOAihtXoQKKwj-NRClN0U">
+    <title>Ocean Arcade Fishing Game | Play Free in Your Browser</title>
+    <meta name="description" content="Play the Ocean Arcade fishing game on a dedicated page with a large WebGL play area, mobile-friendly controls, fullscreen support, and clean arcade-style spacing.">
     <link rel="canonical" href="https://oceanarcadegame.com/game/">
-    <meta property="og:title" content="Ocean Arcade Game | Play the Fishing Game">
-    <meta property="og:description" content="A dedicated browser game page with playable fishing action, responsive layout, and clean supporting content.">
+    <meta name="theme-color" content="#071b2d">
+    <meta property="og:title" content="Ocean Arcade Fishing Game">
+    <meta property="og:description" content="A dedicated browser fishing game page with a larger play area, fullscreen support, and readable support content.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://oceanarcadegame.com/game/">
-    <link rel="stylesheet" href="../css/site.css?v=20260516-4">
+    <meta property="og:image" content="https://oceanarcadegame.com/images/portal/og-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ocean Arcade Fishing Game">
+    <meta name="twitter:description" content="Play the featured browser fishing game in a larger, game-first layout.">
+    <meta name="twitter:image" content="https://oceanarcadegame.com/images/portal/og-cover.png">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="stylesheet" href="../css/site.css?v=20260516-portal">
     <!-- Google AdSense: replace pub-XXXXXXXXXXXXXXXX with your real Publisher ID after approval.
     <script async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
         crossorigin="anonymous"></script>
     -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Ocean Arcade Fishing Game",
+            "url": "https://oceanarcadegame.com/game/",
+            "description": "Browser fishing arcade game with responsive controls, fullscreen support, and quick-session gameplay.",
+            "genre": [
+                "Fishing Arcade",
+                "Browser Game"
+            ],
+            "playMode": "SinglePlayer",
+            "applicationCategory": "Game",
+            "image": "https://oceanarcadegame.com/images/portal/og-cover.png"
+        }
+    </script>
     <script>
         window.SITE_CONFIG = {
-            assetBase: "../"
+            assetBase: "../",
+            preferRemoteSdk: true
         };
     </script>
 </head>
@@ -27,77 +54,179 @@
     <div id="site-header"></div>
 
     <main class="page-shell page-shell-game">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../">Home</a>
+            <span>/</span>
+            <span>Featured Game</span>
+        </nav>
+
         <section class="page-intro">
-            <p class="eyebrow">Game Page</p>
+            <p class="eyebrow">Featured Game</p>
             <h1>Ocean Arcade Fishing Game</h1>
-            <p class="lead">Play the fishing game in a dedicated view with a clean canvas area, simple controls, and enough space around the gameplay to keep the experience comfortable.</p>
+            <p class="lead">This dedicated page keeps the fishing action larger and cleaner than the homepage embed. It is built for players who want a straightforward arcade view, a fullscreen option, and support content that does not crowd the controls.</p>
         </section>
 
         <section class="panel game-stage-panel">
             <div class="section-heading section-heading-inline">
-                <h2>Play now</h2>
+                <div>
+                    <p class="eyebrow">Play Now</p>
+                    <h2>Large browser play area with arcade-style spacing</h2>
+                    <p class="game-focus-note"><strong>Fullscreen tip:</strong> if you want the closest thing to a cabinet view in the browser, expand the canvas before a longer session.</p>
+                </div>
                 <div class="section-actions">
                     <button class="button button-ghost" type="button" data-fullscreen-target="game-container">Fullscreen</button>
+                    <a class="button button-secondary" href="../play/deep-sea-mode/">Open Deep Sea Mode</a>
                 </div>
             </div>
-            <div class="game-frame">
-                <div id="game-container" class="game-container" aria-label="Ocean Arcade Game playable area"></div>
+            <div class="game-shell-grid">
+                <div>
+                    <div class="game-frame">
+                        <div id="game-container" class="game-container" aria-label="Ocean Arcade Game playable area"></div>
+                    </div>
+                    <p class="game-hint">The dedicated game page keeps the main interaction area free from ad placements and long article blocks.</p>
+                </div>
+                <aside class="game-side-panel">
+                    <div class="game-side-card">
+                        <p class="card-kicker">Quick Controls</p>
+                        <h3>Tap, lead, repeat</h3>
+                        <ul class="feature-list">
+                            <li>Tap or click to fire into the school.</li>
+                            <li>Aim slightly ahead of fast fish.</li>
+                            <li>Use the center lane to build rhythm first.</li>
+                        </ul>
+                    </div>
+                    <div class="game-side-card">
+                        <p class="card-kicker">Best For</p>
+                        <h3>Quick browser sessions</h3>
+                        <p>The layout works well when you want to open the game, play for a few minutes, and jump back out without dealing with downloads or account prompts.</p>
+                    </div>
+                </aside>
+            </div>
+            <div class="game-meta-row">
+                <div class="game-meta-card">
+                    <span class="game-meta-label">Mode</span>
+                    <strong>Single Player</strong>
+                </div>
+                <div class="game-meta-card">
+                    <span class="game-meta-label">Controls</span>
+                    <strong>Mouse / Touch</strong>
+                </div>
+                <div class="game-meta-card">
+                    <span class="game-meta-label">Display</span>
+                    <strong>Responsive + Fullscreen</strong>
+                </div>
+                <div class="game-meta-card">
+                    <span class="game-meta-label">Session Style</span>
+                    <strong>Fast Arcade Runs</strong>
+                </div>
             </div>
         </section>
 
         <section class="content-grid content-grid-balanced">
             <article class="panel">
-                <h2>How to Play</h2>
-                <p>Tap or click the water to fire. Watch each fish pattern, time your shots, and keep pressure on the larger targets when they cross the center of the screen.</p>
+                <p class="eyebrow">How To Play</p>
+                <h2>Simple input, readable feedback</h2>
+                <p>Most improvement comes from timing and anticipation rather than button complexity. Watch where each school is headed, fire ahead of the lead fish, and use short sessions to learn the movement patterns.</p>
             </article>
             <article class="panel">
-                <h2>Game Features</h2>
-                <p>The experience keeps the original WebGL gameplay, wraps it in a cleaner site layout, and stays responsive across desktop, tablet, and phone screens.</p>
+                <p class="eyebrow">Why It Works</p>
+                <h2>Game-first layout for AdSense readiness</h2>
+                <p>The dedicated game page separates gameplay from any future ad unit, keeps supporting text in its own panels, and avoids crowded visual elements around repeated click targets.</p>
             </article>
+        </section>
+
+        <section class="panel recommendation-showcase">
+            <div class="section-heading">
+                <p class="eyebrow">Related Routes</p>
+                <h2>Keep exploring without leaving the portal</h2>
+            </div>
+            <div class="recommendation-grid">
+                <article class="recommendation-card recommendation-card-featured">
+                    <div class="card-media">
+                        <img src="../images/portal/thumb-deep-sea.webp" alt="Deep Sea Mode preview image" loading="lazy" decoding="async" width="720" height="420">
+                    </div>
+                    <div class="recommendation-body">
+                        <p class="card-kicker">Main Route</p>
+                        <h3><a href="../play/deep-sea-mode/">Deep Sea Mode</a></h3>
+                        <p>Start with the main portal lane if you want the cleanest onboarding and a direct path back to the homepage.</p>
+                    </div>
+                </article>
+                <article class="recommendation-card">
+                    <div class="card-media">
+                        <img src="../images/portal/thumb-ocean-hunter.webp" alt="Ocean Hunter preview image" loading="lazy" decoding="async" width="720" height="420">
+                    </div>
+                    <div class="recommendation-body">
+                        <p class="card-kicker">Fast Route</p>
+                        <h3><a href="../play/ocean-hunter/">Ocean Hunter</a></h3>
+                        <p>Try a more urgent-feeling route when you want the same ocean action framed as a quicker hunt.</p>
+                    </div>
+                </article>
+                <article class="recommendation-card">
+                    <div class="card-media">
+                        <img src="../images/portal/thumb-blog-mechanics.webp" alt="How Fishing Arcade Games Work article preview" loading="lazy" decoding="async" width="720" height="420">
+                    </div>
+                    <div class="recommendation-body">
+                        <p class="card-kicker">Guide</p>
+                        <h3><a href="../blog/how-to-play-fishing-games/">How Fishing Arcade Games Work</a></h3>
+                        <p>Read the mechanic breakdown if you want context on why the catch loop feels satisfying so quickly.</p>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="ad-slot ad-slot-spaced">
             <p class="ad-label">Advertisement Placeholder</p>
-            <div class="ad-box">Reserved for a future ad unit after approval. This area stays well away from the main gameplay region and any high-frequency interaction points.</div>
+            <div class="ad-box">Reserved for a future ad unit after approval. This area stays well away from the playfield, fullscreen trigger, and the rapid input zone used during gameplay.</div>
         </section>
 
         <section class="content-grid content-grid-balanced">
             <article class="panel">
-                <h2>FAQ</h2>
+                <p class="eyebrow">FAQ</p>
+                <h2>Common questions</h2>
                 <div class="faq-list faq-list-compact">
                     <article class="faq-item">
                         <h3>Can I play on mobile?</h3>
                         <p>Yes. The game canvas scales inside a responsive container so it stays readable on smaller screens.</p>
                     </article>
                     <article class="faq-item">
-                        <h3>Why is there so much spacing around ads?</h3>
-                        <p>Because gameplay clarity comes first, and ad placement should stay away from taps, starts, and other high-risk click zones.</p>
+                        <h3>Does it require download?</h3>
+                        <p>No. This featured fishing game runs in the browser with no installer step.</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>Why is the ad placeholder so far away?</h3>
+                        <p>Because the gameplay should stay readable and protected from accidental-click patterns around repeated interactions.</p>
                     </article>
                 </div>
             </article>
             <article class="panel">
-                <h2>Why this layout works</h2>
-                <p>The page keeps the game front and center while still giving visitors the support content, metadata, and legal pages expected from a real browser game site.</p>
+                <p class="eyebrow">Portal Context</p>
+                <h2>Built to feel like a real destination</h2>
+                <p>This page is part of a broader arcade portal, not a one-off game shell. You can jump back to the homepage, browse supporting articles, or move into the other play pages without losing the sense of place.</p>
+                <div class="inline-link-row">
+                    <a class="badge-pill" href="../">Return Home</a>
+                    <a class="badge-pill" href="../blog/">Read the Blog</a>
+                    <a class="badge-pill" href="../play/classic-arcade/">Try Classic Arcade</a>
+                </div>
             </article>
         </section>
     </main>
 
     <div id="site-footer"></div>
 
-    <script src="../js/site.js?v=20260516-4"></script>
-    <script src="https://pixijs.download/v8.1.0/pixi.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
-    <script src="../src/ResourceManager.js"></script>
-    <script src="../src/AudioManager.js"></script>
-    <script src="../src/GgemuBridge.js"></script>
-    <script src="../src/WaterFilter.js"></script>
-    <script src="../src/CaptureRules.js"></script>
-    <script src="../src/FishFormation.js"></script>
-    <script src="../src/entities/Fish.js"></script>
-    <script src="../src/entities/Bullet.js"></script>
-    <script src="../src/entities/Cannon.js"></script>
-    <script src="../src/entities/AccuracyBar.js"></script>
-    <script src="../src/entities/Player.js"></script>
-    <script src="../src/Main.js"></script>
+    <script src="../js/site.js?v=20260516-portal" defer></script>
+    <script src="https://pixijs.download/v8.1.0/pixi.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js" defer></script>
+    <script src="../src/ResourceManager.js" defer></script>
+    <script src="../src/AudioManager.js" defer></script>
+    <script src="../src/GgemuBridge.js" defer></script>
+    <script src="../src/WaterFilter.js" defer></script>
+    <script src="../src/CaptureRules.js" defer></script>
+    <script src="../src/FishFormation.js" defer></script>
+    <script src="../src/entities/Fish.js" defer></script>
+    <script src="../src/entities/Bullet.js" defer></script>
+    <script src="../src/entities/Cannon.js" defer></script>
+    <script src="../src/entities/AccuracyBar.js" defer></script>
+    <script src="../src/entities/Player.js" defer></script>
+    <script src="../src/Main.js" defer></script>
 </body>
 </html>
