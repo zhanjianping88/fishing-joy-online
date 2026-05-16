@@ -23,9 +23,10 @@ const Game = {
     isLiveMode: false,
 
     async init() {
+        this.hostElement = document.getElementById('game-container') || window;
         this.app = new PIXI.Application();
         await this.app.init({
-            resizeTo: window,
+            resizeTo: this.hostElement,
             backgroundColor: 0x000000,
             antialias: false,
             autoStart: true,
@@ -36,6 +37,8 @@ const Game = {
             resolution: Math.min(window.devicePixelRatio || 1, 1.25)
         });
         this.app.canvas.style.display = 'block';
+        this.app.canvas.style.width = '100%';
+        this.app.canvas.style.height = '100%';
         document.getElementById('game-container').appendChild(this.app.canvas);
 
         this.width = this.app.screen.width;

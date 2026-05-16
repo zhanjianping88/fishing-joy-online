@@ -1,48 +1,129 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Fishing Joy - Ultimate WebGL Fishing Experience | GGEMU.COM</title>
-    <meta name="description" content="Experience the ultimate high-performance WebGL fishing game. Powered by GGEMU SDK, PixiJS v8 and Tone.js. Play now on GGEMU.COM and earn GCoin!">
-    <meta name="keywords" content="Fishing Joy, WebGL Game, PixiJS v8, Tone.js, GGEMU SDK, GCoin, Retro Games, Browser Game, 捕鱼游戏">
-    <link rel="canonical" href="https://imtonyjaa.github.io/ggemu-fishing-joy/" />
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        html, body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-        }
-        #game-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-    <script src="https://pixijs.download/v8.1.0/pixi.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Joy Online | 在线休闲捕鱼小游戏站</title>
+    <meta name="description" content="Fishing Joy Online 是一个在线休闲捕鱼小游戏网站，提供浏览器即开即玩的捕鱼体验，并为后续 Google AdSense 合规接入预留页面结构与广告位。">
+    <link rel="canonical" href="https://your-domain.example/">
+    <meta property="og:title" content="Fishing Joy Online | 在线休闲捕鱼小游戏站">
+    <meta property="og:description" content="浏览器即开即玩的休闲捕鱼小游戏站，支持桌面端与移动端访问。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.example/">
+    <link rel="stylesheet" href="./css/site.css">
+    <!-- Google AdSense: 上线并通过审核后，将 pub-XXXXXXXXXXXXXXXX 替换为真实 Publisher ID。
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+    -->
 </head>
-<body>
-    <div id="game-container"></div>
-    <script src="src/ResourceManager.js"></script>
-    <script src="src/AudioManager.js"></script>
-    <script src="src/GgemuBridge.js"></script>
-    <script src="src/WaterFilter.js"></script>
-    <script src="src/CaptureRules.js"></script>
-    <script src="src/FishFormation.js"></script>
-    <script src="src/entities/Fish.js"></script>
-    <script src="src/entities/Bullet.js"></script>
-    <script src="src/entities/Cannon.js"></script>
-    <script src="src/entities/AccuracyBar.js"></script>
-    <script src="src/entities/Player.js"></script>
-    <script src="src/Main.js"></script>
+<body data-page="home" data-base-path="./">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+        <section class="hero hero-home">
+            <div class="hero-copy">
+                <p class="eyebrow">Online Casual Arcade</p>
+                <h1>轻松开玩，随时捕鱼</h1>
+                <p class="lead">
+                    这是一个在线休闲捕鱼小游戏网站。你可以直接在浏览器中体验原版 WebGL 捕鱼玩法，
+                    也可以在这里查看玩法说明、常见问题、版权信息以及后续 AdSense 上线所需的合规页面。
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="./game/">开始游玩</a>
+                    <a class="button button-secondary" href="./about/">了解网站</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h2>站点亮点</h2>
+                <ul class="feature-list">
+                    <li>保留原项目 PixiJS 捕鱼游戏玩法</li>
+                    <li>多页面静态站点结构，便于部署到 GitHub Pages / Cloudflare Pages</li>
+                    <li>已预留 AdSense 脚本注释位与 `ads.txt`</li>
+                    <li>包含隐私政策、服务条款、联系页与许可证说明</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <article class="panel">
+                <h2>怎么玩</h2>
+                <p>打开游戏页后，点击或触摸游戏画面即可发射炮弹，捕获鱼群并观察不同鱼类的出场节奏与特效反馈。</p>
+                <p>游戏区域经过重新布局，不再是裸露的全屏画布，而是放进完整站点页面中，方便后续内容扩展与广告合规管理。</p>
+            </article>
+            <article class="panel">
+                <h2>适合上线运营</h2>
+                <p>页面已经补齐基础 SEO 元信息、内容型模块、站点页脚和政策页面。后续你只需要替换域名、联系邮箱与 AdSense pub ID，即可继续准备上线审核。</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>为什么这是一个更适合审核的小游戏站</h2>
+            <div class="card-row">
+                <article class="mini-card">
+                    <h3>不只是游戏画布</h3>
+                    <p>首页、关于页、政策页、联系页和许可证说明页共同构成了完整站点结构，避免只有一个空白游戏容器。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>内容更易理解</h3>
+                    <p>访客可以先了解玩法、站点定位、常见问题和版权来源，再决定是否进入游戏页，站点信息更透明。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>广告位置更克制</h3>
+                    <p>广告位只做占位展示，并与高频操作区域保持安全距离，减少误点风险，也更利于后续合规接入。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>适合什么样的玩家</h2>
+            <p>如果你想找一个打开浏览器就能玩的轻量小游戏，这个站点会比较合适。它没有复杂登录流程，也不依赖大型前端框架，适合作为休闲娱乐、内容站点样板或小游戏站原型。</p>
+            <p>后续你还可以继续扩展多个同类游戏页面，用统一导航和推荐内容区把整个站点做成小游戏目录站。</p>
+        </section>
+
+        <section class="panel">
+            <h2>常见问题</h2>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>这个站点可以直接部署吗？</h3>
+                    <p>可以。当前是纯静态结构，直接部署到 GitHub Pages 或 Cloudflare Pages 就能访问，不依赖打包构建流程。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>为什么现在不放真实广告？</h3>
+                    <p>因为广告代码、Publisher ID 和 ads.txt 都应该使用你自己的真实 AdSense 配置，不能在开发阶段伪造或乱填。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>许可证信息在哪里看？</h3>
+                    <p>你可以在页脚入口和许可证说明页查看开源项目来源、MIT License 文本以及保留版权声明的说明。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>推荐内容位</h2>
+            <div class="card-row">
+                <article class="mini-card">
+                    <h3>今日推荐</h3>
+                    <p>后续可放同类休闲小游戏、专题合集或站内分类入口。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>新手指南</h3>
+                    <p>可扩展为捕鱼技巧、常见问题、设备兼容性和更新日志。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>站点更新</h3>
+                    <p>适合放版本说明、活动公告或即将上线的新游戏占位。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="ad-slot">
+            <p class="ad-label">Advertisement Placeholder</p>
+            <div class="ad-box">首页展示广告位预留区域，待 AdSense 审核通过后再接入真实代码。</div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="./js/site.js"></script>
 </body>
 </html>

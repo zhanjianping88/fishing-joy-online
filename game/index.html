@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Fishing Joy Online | 浏览器捕鱼小游戏</title>
+    <meta name="description" content="在浏览器中体验 Fishing Joy 捕鱼小游戏。页面已加入玩法说明、FAQ、推荐游戏占位区与 AdSense 合规广告位预留。">
+    <link rel="canonical" href="https://your-domain.example/game/">
+    <meta property="og:title" content="Play Fishing Joy Online | 浏览器捕鱼小游戏">
+    <meta property="og:description" content="保留原版 WebGL 捕鱼玩法，并提供更适合上线运营的完整网页游戏布局。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.example/game/">
+    <link rel="stylesheet" href="../css/site.css">
+    <!-- Google AdSense: 上线并通过审核后，将 pub-XXXXXXXXXXXXXXXX 替换为真实 Publisher ID。
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+    -->
+    <script>
+        window.SITE_CONFIG = {
+            assetBase: "../"
+        };
+    </script>
+</head>
+<body data-page="game" data-base-path="../">
+    <div id="site-header"></div>
+
+    <main class="page-shell page-shell-game">
+        <section class="page-intro">
+            <p class="eyebrow">Game Room</p>
+            <h1>Fishing Joy Online</h1>
+            <p class="lead">点击或轻触画面即可开火捕鱼。页面布局已针对内容展示、移动端阅读和后续广告合规做了整理，游戏主体保持原始玩法与资源路径。</p>
+        </section>
+
+        <section class="panel game-stage-panel">
+            <h2>开始游戏</h2>
+            <div class="game-frame">
+                <div id="game-container" class="game-container" aria-label="Fishing Joy game canvas area"></div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>操作说明</h2>
+            <div class="card-row card-row-tight">
+                <article class="mini-card">
+                    <h3>发射炮弹</h3>
+                    <p>桌面端使用鼠标点击画面，移动端使用手指轻触游戏区域。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>捕捉鱼群</h3>
+                    <p>观察鱼群路线和出场节奏，连续命中时会触发更丰富的反馈音效。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>兼容设备</h3>
+                    <p>支持桌面、平板和手机浏览器访问，建议使用现代浏览器获得更稳定体验。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>游戏介绍</h2>
+            <p>本页基于开源项目 `ggemu-fishing-joy` 改造，保留原有 PixiJS WebGL 捕鱼玩法，并将裸页面包装为更适合上线的小游戏站内容页。</p>
+            <p>你可以在这里扩展更多栏目，例如游戏攻略、更新日志、专题合集、推荐游戏、作者介绍和站内搜索。</p>
+        </section>
+
+        <section class="ad-slot ad-slot-spaced">
+            <p class="ad-label">Advertisement Placeholder</p>
+            <div class="ad-box">此区域与游戏画布保持足够距离，供后续放置合规展示广告。</div>
+        </section>
+
+        <section class="panel">
+            <h2>FAQ</h2>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>为什么没有立即接入真实广告代码？</h3>
+                    <p>当前仅预留位置与结构，避免伪造或错误使用 Publisher ID。等站点部署完成并通过 AdSense 后，再替换为真实代码。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>为什么广告位不紧贴游戏区域？</h3>
+                    <p>这是为了降低误触风险，避免广告靠近游戏操作区域而影响审核、体验和广告流量质量。</p>
+                </article>
+                <article class="faq-item">
+                    <h3>移动端能玩吗？</h3>
+                    <p>可以。游戏画布已经限制在响应式容器内，不会像原始全屏版本那样直接把整页撑满或溢出屏幕。</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>推荐游戏占位区</h2>
+            <div class="card-row">
+                <article class="mini-card">
+                    <h3>经典街机专题</h3>
+                    <p>待补充其他休闲街机游戏或捕鱼相关专题入口。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>双人同乐精选</h3>
+                    <p>适合后续扩展到多人或家庭向小游戏合集。</p>
+                </article>
+                <article class="mini-card">
+                    <h3>更多即将上线</h3>
+                    <p>为今后的站内推荐模块、内链策略和内容增长预留版位。</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/site.js"></script>
+    <script src="https://pixijs.download/v8.1.0/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+    <script src="../src/ResourceManager.js"></script>
+    <script src="../src/AudioManager.js"></script>
+    <script src="../src/GgemuBridge.js"></script>
+    <script src="../src/WaterFilter.js"></script>
+    <script src="../src/CaptureRules.js"></script>
+    <script src="../src/FishFormation.js"></script>
+    <script src="../src/entities/Fish.js"></script>
+    <script src="../src/entities/Bullet.js"></script>
+    <script src="../src/entities/Cannon.js"></script>
+    <script src="../src/entities/AccuracyBar.js"></script>
+    <script src="../src/entities/Player.js"></script>
+    <script src="../src/Main.js"></script>
+</body>
+</html>

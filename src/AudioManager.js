@@ -1,5 +1,11 @@
 const AudioManager = {
     initialized: false,
+    resolveAssetPath: function(path) {
+        const basePath = window.SITE_CONFIG && window.SITE_CONFIG.assetBase
+            ? window.SITE_CONFIG.assetBase
+            : "./";
+        return new URL(path, new URL(basePath, window.location.href)).href;
+    },
     init: function() {
         if(this.initialized) return;
 
@@ -50,7 +56,7 @@ const AudioManager = {
         this.uiSynth.volume.value = -20;
 
         this.bgPlayer = new Tone.Player({
-            url: "./loop-01.mp3",
+            url: this.resolveAssetPath("loop-01.mp3"),
             loop: true,
             fadeIn: 2,
             volume: -10
@@ -91,13 +97,13 @@ const AudioManager = {
         this.multiKillPlayers = {};
         for (let i = 2; i <= 5; i++) {
             this.multiKillPlayers[i] = new Tone.Player({
-                url: `./audios/${i}_kill.mp3`,
+                url: this.resolveAssetPath(`audios/${i}_kill.mp3`),
                 volume: 0
             }).connect(this.outputNode);
         }
 
         this.oneShotPlayer = new Tone.Player({
-            url: `./audios/oneshot.mp3`,
+            url: this.resolveAssetPath("audios/oneshot.mp3"),
             volume: 0
         }).connect(this.outputNode);
 

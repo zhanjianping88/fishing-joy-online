@@ -32,9 +32,16 @@ const ResourceManager = {
         {id:"coinText", src:"images/coinText.png"}
     ],
 
+    resolveAssetPath(path) {
+        const basePath = window.SITE_CONFIG && window.SITE_CONFIG.assetBase
+            ? window.SITE_CONFIG.assetBase
+            : "./";
+        return new URL(path, new URL(basePath, window.location.href)).href;
+    },
+
     async load() {
         const loadPromises = this.sources.map(source => {
-            return PIXI.Assets.load(source.src).then(texture => {
+            return PIXI.Assets.load(this.resolveAssetPath(source.src)).then(texture => {
                 this.textures[source.id] = texture;
             });
         });
