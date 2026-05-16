@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Fruit Slot Machine | Ocean Arcade Game</title>
+    <meta name="description" content="Play a classic fruit slot browser game inside Ocean Arcade Game.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+    <div id="game">
+        <script src="./js/game.js"></script>
+    </div>
+    <div id="wrongRotation">
+        <img src="./assets/img_480/rotate_screen.png" alt="Rotate device">
+    </div>
+    <div class="font_preload" style="opacity: 0">
+        <span style="font-family: 'gameFont', Arial, sans-serif;"></span>
+    </div>
+    <script>
+        (function () {
+            var ggemuInited = false;
+
+            function initGGEMU() {
+                if (ggemuInited) return;
+                var g = window.game;
+                if (!window.GGEMU || !g || !g.canvas) {
+                    setTimeout(initGGEMU, 100);
+                    return;
+                }
+                ggemuInited = true;
+
+                var canvas = g.canvas;
+                var masterGain = null;
+                if (g.sound && g.sound.masterGain) {
+                    masterGain = g.sound.masterGain;
+                }
+
+                window.GGEMU.init({
+                    debug: false,
+                    parentOrigin: "*"
+                });
+
+                window.GGEMU.registerCanvas(canvas);
+                if (masterGain) {
+                    window.GGEMU.registerAudioNode(masterGain);
+                }
+
+                window.GGEMU.setReady({
+                    demo: "fruit-slot-machine"
+                });
+
+                try { window.GGEMU.getBagStatus().catch(function (e) { console.warn(e); }); } catch (e) { console.warn(e); }
+                try { window.GGEMU.startLive().catch(function (e) { console.warn(e); }); } catch (e) { console.warn(e); }
+            }
+
+            function recoverAudio() {
+                var g = window.game;
+                if (g && g.sound && g.sound.context && g.sound.context.state === "suspended") {
+                    g.sound.context.resume();
+                }
+            }
+
+            window.addEventListener("click", recoverAudio, true);
+            window.addEventListener("touchstart", recoverAudio, true);
+
+            var script = document.createElement("script");
+            script.src = "https://ggemu.com/api/ggemu-sdk.js";
+            script.async = true;
+            script.onload = function () {
+                setTimeout(initGGEMU, 100);
+            };
+            document.head.appendChild(script);
+        })();
+    </script>
+</body>
+</html>
