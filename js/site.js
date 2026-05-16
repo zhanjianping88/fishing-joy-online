@@ -4,13 +4,13 @@
     const currentPage = body.dataset.page || "";
 
     const navItems = [
-        { key: "home", label: "首页", href: `${basePath}` },
-        { key: "game", label: "游戏", href: `${basePath}game/` },
-        { key: "about", label: "关于", href: `${basePath}about/` },
-        { key: "privacy", label: "隐私政策", href: `${basePath}privacy/` },
-        { key: "terms", label: "服务条款", href: `${basePath}terms/` },
-        { key: "contact", label: "联系", href: `${basePath}contact/` },
-        { key: "license", label: "许可证", href: `${basePath}license.html` }
+        { key: "home", label: "Home", href: `${basePath}` },
+        { key: "game", label: "Game", href: `${basePath}game/` },
+        { key: "about", label: "About", href: `${basePath}about/` },
+        { key: "privacy", label: "Privacy", href: `${basePath}privacy/` },
+        { key: "terms", label: "Terms", href: `${basePath}terms/` },
+        { key: "contact", label: "Contact", href: `${basePath}contact/` },
+        { key: "license", label: "License", href: `${basePath}license.html` }
     ];
 
     const headerTarget = document.getElementById("site-header");
@@ -21,13 +21,13 @@
             <header class="site-header">
                 <div class="nav-inner">
                     <a class="brand" href="${basePath}">
-                        <span class="brand-mark">FJ</span>
+                        <span class="brand-mark">OA</span>
                         <span class="brand-copy">
-                            <strong>Fishing Joy Online</strong>
-                            <span>Browser fishing mini game</span>
+                            <strong>Ocean Arcade Game</strong>
+                            <span>Free browser arcade games</span>
                         </span>
                     </a>
-                    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+                    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
                     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
                         ${navItems.map((item) => `
                             <a href="${item.href}" class="${item.key === currentPage ? "is-active" : ""}">${item.label}</a>
@@ -46,11 +46,12 @@
                         ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
                     </div>
                     <p class="footer-note">
-                        本站基于开源项目 <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a> 改造，
-                        保留 MIT License 与原作者版权说明。
+                        Ocean Arcade Game is built around the open source project
+                        <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a>
+                        and keeps the original MIT license notice and attribution.
                     </p>
                     <p class="footer-meta">
-                        &copy; <span id="footer-year"></span> Fishing Joy Online. License details are available on the license page.
+                        &copy; <span id="footer-year"></span> Ocean Arcade Game. License details are available on the license page.
                     </p>
                 </div>
             </footer>
@@ -72,4 +73,26 @@
     if (yearTarget) {
         yearTarget.textContent = String(new Date().getFullYear());
     }
+
+    const fullscreenButtons = document.querySelectorAll("[data-fullscreen-target]");
+    fullscreenButtons.forEach(function (button) {
+        button.addEventListener("click", async function () {
+            const targetId = button.getAttribute("data-fullscreen-target");
+            const target = targetId ? document.getElementById(targetId) : null;
+
+            if (!target || !document.fullscreenEnabled) {
+                return;
+            }
+
+            try {
+                if (document.fullscreenElement === target) {
+                    await document.exitFullscreen();
+                } else {
+                    await target.requestFullscreen();
+                }
+            } catch (error) {
+                console.warn("Fullscreen failed:", error);
+            }
+        });
+    });
 })();
