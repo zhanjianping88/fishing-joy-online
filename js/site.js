@@ -5,7 +5,7 @@
 
     const navItems = [
         { key: "home", label: "Home", href: `${basePath}` },
-        { key: "play", label: "Play", href: `${basePath}play/deep-sea-mode/` },
+        { key: "play", label: "Play", href: `${basePath}deep-sea-mode/` },
         { key: "game", label: "Featured Game", href: `${basePath}game/` },
         { key: "blog", label: "Blog", href: `${basePath}blog/` },
         { key: "about", label: "About", href: `${basePath}about/` },
@@ -26,7 +26,7 @@
                         <span class="brand-mark">OA</span>
                         <span class="brand-copy">
                             <strong>Ocean Arcade Game</strong>
-                            <span>Free browser arcade games</span>
+                            <span>Fishing games and arcade detours</span>
                         </span>
                     </a>
                     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -48,19 +48,19 @@
                         <span class="brand-mark">OA</span>
                         <span class="brand-copy">
                             <strong>Ocean Arcade Game</strong>
-                            <span>Ocean blue browser arcade portal</span>
+                            <span>Small browser gaming project</span>
                         </span>
                     </div>
                     <div class="footer-links">
                         ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
                     </div>
                     <p class="footer-note">
-                        Ocean Arcade Game keeps browser play front and center, gives support content room to breathe, and preserves the original open source attribution for
+                        Ocean Arcade Game is a small browser gaming project built around fishing runs, side modes, and lightweight web play. The original open source attribution for
                         <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a>
-                        on the license page.
+                        is kept on the license page.
                     </p>
                     <p class="footer-meta">
-                        &copy; <span id="footer-year"></span> Ocean Arcade Game. Free browser fishing runs, arcade side routes, and readable ad-safe layouts.
+                        &copy; <span id="footer-year"></span> Ocean Arcade Game. Made for short fishing runs, bigger catches, and easy replays.
                     </p>
                 </div>
             </footer>

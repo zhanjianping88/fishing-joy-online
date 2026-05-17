@@ -465,6 +465,14 @@ img {
     grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.feature-grid-compact {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-grid-compact .feature-tile {
+    min-height: 0;
+}
+
 .feature-tile {
     padding: 18px;
     border-radius: 20px;
@@ -765,6 +773,10 @@ img {
 
 .faq-grid-home .faq-item {
     height: 100%;
+}
+
+.faq-grid-home .faq-item:last-child {
+    grid-column: 1 / -1;
 }
 
 .recommendation-body a,
