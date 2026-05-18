@@ -1,7 +1,7 @@
 {
     "name": "Ocean Arcade Game",
     "short_name": "Ocean Arcade",
-    "description": "Ocean-themed browser arcade portal with fishing action, side routes, and game guides.",
+    "description": "Small ocean arcade site with fishing action, side routes, and a few player notes.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#04182b",

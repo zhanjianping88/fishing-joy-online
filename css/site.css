@@ -408,12 +408,13 @@ img {
     position: absolute;
     left: 28px;
     right: 28px;
-    bottom: 28px;
+    bottom: clamp(132px, 18vw, 174px);
     display: grid;
     gap: 14px;
 }
 
 .hero-overlay-card {
+    max-width: 76%;
     padding: 18px;
     border-radius: 20px;
     background: rgba(2, 14, 24, 0.72);
@@ -1094,6 +1095,15 @@ img {
     .feature-grid,
     .hero-feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-overlay {
+        position: static;
+        margin-top: 16px;
+    }
+
+    .hero-overlay-card {
+        max-width: none;
     }
 
     .hero-actions,

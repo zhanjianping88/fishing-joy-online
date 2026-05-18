@@ -26,7 +26,7 @@
                         <span class="brand-mark">OA</span>
                         <span class="brand-copy">
                             <strong>Ocean Arcade Game</strong>
-                            <span>Fishing games and arcade detours</span>
+                            <span>Small fish game site, still tinkering with it</span>
                         </span>
                     </a>
                     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -48,19 +48,19 @@
                         <span class="brand-mark">OA</span>
                         <span class="brand-copy">
                             <strong>Ocean Arcade Game</strong>
-                            <span>Small browser gaming project</span>
+                            <span>Small indie arcade side project</span>
                         </span>
                     </div>
                     <div class="footer-links">
                         ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
                     </div>
                     <p class="footer-note">
-                        Ocean Arcade Game is a small browser gaming project built around fishing runs, side modes, and lightweight web play. The original open source attribution for
+                        Ocean Arcade Game is a small browser gaming project mostly built around fish patterns, fullscreen runs, and the kind of quick arcade loops that are easy to reopen later. The original open source attribution for
                         <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a>
                         is kept on the license page.
                     </p>
                     <p class="footer-meta">
-                        &copy; <span id="footer-year"></span> Ocean Arcade Game. Made for short fishing runs, bigger catches, and easy replays.
+                        &copy; <span id="footer-year"></span> Ocean Arcade Game. Kept online for bigger catches, quick breaks, and that one more round feeling.
                     </p>
                 </div>
             </footer>
