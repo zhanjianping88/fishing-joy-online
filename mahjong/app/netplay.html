@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahjong Netplay Unavailable | Ocean Arcade Game</title>
+    <meta name="description" content="Network play for this mahjong app is not enabled on Ocean Arcade Game because it requires a separate server package.">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+        body {
+            margin: 0;
+            font-family: "Avenir Next", "Segoe UI", sans-serif;
+            background: linear-gradient(180deg, #071b2d, #04111d 70%);
+            color: #edf8ff;
+            min-height: 100vh;
+        }
+        .wrap {
+            width: min(100% - 32px, 920px);
+            margin: 0 auto;
+            padding: 32px 0 72px;
+        }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+        .nav a {
+            color: #c6dfec;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .panel {
+            padding: 28px;
+            border-radius: 28px;
+            background: linear-gradient(180deg, rgba(13, 47, 74, 0.94), rgba(5, 20, 34, 0.98));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 28px 80px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2, p {
+            margin-top: 0;
+        }
+        p {
+            color: #c6dfec;
+            line-height: 1.8;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 22px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .button-primary {
+            background: linear-gradient(135deg, #ffd166, #ffab2e);
+            color: #0a2338;
+        }
+        .button-secondary {
+            color: #edf8ff;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .note {
+            margin-top: 18px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav class="nav" aria-label="Mahjong app navigation">
+            <a href="../">Mahjong Landing</a>
+            <a href="./index.html">Main Table</a>
+            <a href="./autoplay.html">Autoplay</a>
+            <a href="./rule.html">Rules</a>
+            <a href="./paipu.html">Replays</a>
+            <a href="./dapai.html">What Would You Cut?</a>
+            <a href="./hule.html">Score Tools</a>
+        </nav>
+
+        <section class="panel">
+            <h1>Network Play Is Not Enabled Here</h1>
+            <p>This mahjong route on Ocean Arcade Game is based on the open source project <code>kobalab/Majiang</code>. The original project supports online rooms, but that feature needs a separate server package and authentication flow.</p>
+            <p>On this site, the standalone parts are the ones that are live: local table play, autoplay, scoring drills, hand study, and replay tools.</p>
+            <div class="actions">
+                <a class="button button-primary" href="./index.html">Open Main Table</a>
+                <a class="button button-secondary" href="./autoplay.html">Watch Autoplay</a>
+                <a class="button button-secondary" href="../">Back to Mahjong Landing</a>
+            </div>
+            <p class="note">If you specifically want multiplayer later, we can wire up the separate mahjong server as a second phase.</p>
+        </section>
+    </div>
+</body>
+</html>

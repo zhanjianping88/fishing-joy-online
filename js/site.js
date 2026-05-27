@@ -7,6 +7,7 @@
         { key: "home", label: "Home", href: `${basePath}` },
         { key: "play", label: "Play", href: `${basePath}deep-sea-mode/` },
         { key: "game", label: "Featured Game", href: `${basePath}game/` },
+        { key: "mahjong", label: "Mahjong", href: `${basePath}mahjong/` },
         { key: "blog", label: "Blog", href: `${basePath}blog/` },
         { key: "about", label: "About", href: `${basePath}about/` },
         { key: "privacy", label: "Privacy", href: `${basePath}privacy/` },
@@ -55,9 +56,11 @@
                         ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
                     </div>
                     <p class="footer-note">
-                        Ocean Arcade Game is a small browser gaming project mostly built around fish patterns, fullscreen runs, and the kind of quick arcade loops that are easy to reopen later. The original open source attribution for
+                        Ocean Arcade Game is a small browser gaming project mostly built around fish patterns, fullscreen runs, and now one full mahjong detour for longer sessions. Open source attributions for
                         <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a>
-                        is kept on the license page.
+                        and
+                        <a href="https://github.com/kobalab/Majiang" target="_blank" rel="noopener noreferrer">kobalab/Majiang</a>
+                        are kept on the license page.
                     </p>
                     <p class="footer-meta">
                         &copy; <span id="footer-year"></span> Ocean Arcade Game. Kept online for bigger catches, quick breaks, and that one more round feeling.
