@@ -301,15 +301,10 @@ img {
     gap: 12px;
 }
 
-.hero-title span {
-    display: block;
-}
-
-.hero-title em {
-    display: block;
+.hero-title-note {
     max-width: 9.5ch;
     color: var(--accent-cyan);
-    font-style: normal;
+    margin: 2px 0 0;
     font-size: clamp(1rem, 1.7vw, 1.45rem);
     line-height: 1.1;
     letter-spacing: -0.03em;
@@ -1038,6 +1033,20 @@ img {
     padding: 34px 0 52px;
 }
 
+.footer-link-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 28px;
+}
+
+.footer-group-title {
+    margin: 0 0 10px;
+    color: var(--muted-strong);
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 .footer-brand {
     display: inline-flex;
     align-items: center;
@@ -1284,6 +1293,10 @@ img {
     .game-container-home {
         min-height: 280px;
         height: min(82vw, 56vh);
+    }
+
+    .footer-link-groups {
+        grid-template-columns: 1fr;
     }
 
     .ad-slot-spaced {

@@ -15,6 +15,14 @@
         { key: "contact", label: "Contact", href: `${basePath}contact/` },
         { key: "license", label: "License", href: `${basePath}license.html` }
     ];
+    const seoItems = [
+        { label: "Ocean Arcade Game", href: `${basePath}ocean-arcade-game/` },
+        { label: "Play Ocean Arcade", href: `${basePath}play-ocean-arcade/` },
+        { label: "Ocean Arcade Online", href: `${basePath}ocean-arcade-online/` },
+        { label: "How to Play Ocean Arcade", href: `${basePath}how-to-play-ocean-arcade/` },
+        { label: "Ocean Arcade Tips", href: `${basePath}ocean-arcade-tips/` },
+        { label: "Free Ocean Arcade Game", href: `${basePath}free-ocean-arcade-game/` }
+    ];
 
     const headerTarget = document.getElementById("site-header");
     const footerTarget = document.getElementById("site-footer");
@@ -52,11 +60,22 @@
                             <span>Small indie arcade side project</span>
                         </span>
                     </div>
-                    <div class="footer-links">
-                        ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
+                    <div class="footer-link-groups">
+                        <div>
+                            <p class="footer-group-title">Site Links</p>
+                            <div class="footer-links">
+                                ${navItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
+                            </div>
+                        </div>
+                        <div>
+                            <p class="footer-group-title">Ocean Arcade Pages</p>
+                            <div class="footer-links">
+                                ${seoItems.map((item) => `<a href="${item.href}">${item.label}</a>`).join("")}
+                            </div>
+                        </div>
                     </div>
                     <p class="footer-note">
-                        Ocean Arcade Game is a small browser gaming project mostly built around fish patterns, fullscreen runs, and now one full mahjong detour for longer sessions. Open source attributions for
+                        Ocean Arcade Game is a small browser gaming project mostly built around fish patterns, fullscreen runs, and a set of real Ocean Arcade guides for players who want tips, controls, and online play help. Open source attributions for
                         <a href="https://github.com/imtonyjaa/ggemu-fishing-joy" target="_blank" rel="noopener noreferrer">ggemu-fishing-joy</a>
                         and
                         <a href="https://github.com/kobalab/Majiang" target="_blank" rel="noopener noreferrer">kobalab/Majiang</a>
