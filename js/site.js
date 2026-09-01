@@ -5,7 +5,7 @@
 
     const navItems = [
         { key: "home", label: "Home", href: `${basePath}` },
-        { key: "play", label: "Play", href: `${basePath}deep-sea-mode/` },
+        { key: "play", label: "Play", href: `${basePath}play/deep-sea-mode/` },
         { key: "game", label: "Featured Game", href: `${basePath}game/` },
         { key: "mahjong", label: "Mahjong", href: `${basePath}mahjong/` },
         { key: "blog", label: "Blog", href: `${basePath}blog/` },

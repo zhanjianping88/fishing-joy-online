@@ -21,7 +21,7 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="manifest" href="./site.webmanifest">
-    <link rel="stylesheet" href="./css/site.css?v=20260517-arcade">
+    <link rel="stylesheet" href="./css/site.css?v=20260901-gamefirst">
     <script async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9180363348442934"
         crossorigin="anonymous"></script>
@@ -105,138 +105,53 @@
     <div id="site-header"></div>
 
     <main class="page-shell">
-        <section class="hero hero-home">
-            <div class="hero-copy">
-                <div class="hero-intro-row">
-                    <p class="eyebrow">Ocean Arcade Game</p>
-                    <span class="live-pill">Small site, still updating</span>
+        <section id="play-now" class="arcade-hero" aria-label="Playable Ocean Arcade Game">
+            <div class="arcade-stage">
+                <div class="arcade-stage-bar">
+                    <div>
+                        <p class="eyebrow">Play Now</p>
+                        <h1>Ocean Arcade Game</h1>
+                    </div>
+                    <div class="arcade-stage-actions">
+                        <button class="button button-ghost" type="button" data-fullscreen-target="game-container">Fullscreen</button>
+                    </div>
                 </div>
-                <h1 class="hero-title">Ocean Arcade Game</h1>
-                <p class="hero-title-note">A small fish arcade with one very real mahjong detour</p>
-                <p class="lead hero-subline">Ocean Arcade Game is the version of Ocean Arcade I wanted to keep open in a tab for real. You can play Ocean Arcade online for free, go fullscreen when the fish lanes get busy, and settle into a light ocean-themed arcade game that still feels easy to pick up after a long day.</p>
-                <div class="hero-badges" aria-label="Portal highlights">
-                    <span class="badge-pill">Best on desktop</span>
-                    <span class="badge-pill">Touch works too</span>
-                    <span class="badge-pill">Fullscreen ready</span>
+                <div class="game-frame game-frame-hero">
+                    <div id="game-container" class="game-container game-container-hero" aria-label="Ocean Arcade Game playable area">
+                        <div class="game-loading">Loading Ocean Arcade...</div>
+                    </div>
                 </div>
+                <div class="arcade-dock" aria-label="Game status and controls">
+                    <span>Mouse / Touch</span>
+                    <span>Free Browser Play</span>
+                    <span>Fullscreen Ready</span>
+                    <span>Single Player</span>
+                </div>
+            </div>
+            <aside class="arcade-side-panel" aria-label="Game quick start">
+                <p class="eyebrow">Fishing Arcade</p>
+                <h2>Open the page, aim, and start catching fish.</h2>
+                <p>Ocean Arcade Game is a free ocean-themed browser game with fast fish lanes, simple click or tap controls, and a fullscreen playfield that feels better the longer the round gets.</p>
+                <ul class="feature-list">
+                    <li>Click or tap the water to fire.</li>
+                    <li>Aim slightly ahead of fast fish.</li>
+                    <li>Watch the middle lane first, then chase edge shots.</li>
+                </ul>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#play-now">Play Now</a>
-                    <a class="button button-secondary" href="./play-ocean-arcade/">See Play Guide</a>
+                    <a class="button button-primary" href="./game/">Focused Game Page</a>
+                    <a class="button button-secondary" href="./play-ocean-arcade/">How to Play</a>
                 </div>
-                <p class="hero-side-note">The nice part is that it still feels scrappy in a good way. You can jump in for three messy rounds, use it as a free Ocean Arcade game during a short break, or disappear into fullscreen and forget why you opened a new tab in the first place.</p>
-                <div class="feature-grid feature-grid-compact" aria-label="Latest notes">
-                    <article class="feature-tile feature-tile-warm">
-                        <strong>Today&apos;s pick</strong>
-                        <span>Ocean Hunter if you only have five noisy minutes.</span>
-                    </article>
-                    <article class="feature-tile feature-tile-tall">
-                        <strong>Most-used start</strong>
-                        <span>Deep Sea Mode still wins when people want a calmer first round.</span>
-                    </article>
-                    <article class="feature-tile feature-tile-cool">
-                        <strong>Latest update</strong>
-                        <span>Added a full riichi mahjong detour for nights when the fish game mood is gone.</span>
-                    </article>
+                <div class="arcade-mini-modes">
+                    <a href="./play/deep-sea-mode/">
+                        <strong>Deep Sea Mode</strong>
+                        <span>Calmer first run</span>
+                    </a>
+                    <a href="./play/ocean-hunter/">
+                        <strong>Ocean Hunter</strong>
+                        <span>Faster route</span>
+                    </a>
                 </div>
-            </div>
-
-            <div class="hero-panel">
-                <div class="hero-media-ribbon" aria-label="Gameplay notes">
-                    <span>Fullscreen recommended</span>
-                    <span>Watch the center lane first</span>
-                    <span>Big fish are easier to read</span>
-                </div>
-                <div class="hero-media">
-                    <img src="./images/portal/hero-feature.webp" alt="Ocean Arcade gameplay preview with reef traffic, coin fish, and bright catches" width="1200" height="760">
-                </div>
-                <div class="hero-overlay">
-                    <div class="hero-overlay-card">
-                        <p class="card-kicker">Player Tip</p>
-                        <h2>Fast fish usually cut weird near the edges</h2>
-                        <p>The larger fish are easier to track. The little ones look harmless until they flick across the center and waste a shot.</p>
-                    </div>
-                </div>
-                <div class="hero-score-strip" aria-label="Homepage small stats">
-                    <article>
-                        <strong>Best mood</strong>
-                        <span>Late-night fullscreen runs</span>
-                    </article>
-                    <article>
-                        <strong>Fastest detour</strong>
-                        <span>Classic Arcade between fish rounds</span>
-                    </article>
-                    <article>
-                        <strong>Longest sessions</strong>
-                        <span>Mahjong once people stop rushing</span>
-                    </article>
-                </div>
-                <div class="hero-feature-grid">
-                    <article class="feature-tile">
-                        <strong>Small stat</strong>
-                        <span>Best feeling setup is still desktop plus fullscreen plus one uninterrupted run.</span>
-                    </article>
-                    <article class="feature-tile">
-                        <strong>Quick habit</strong>
-                        <span>Most good rounds start with watching the center lane for ten seconds instead of panic firing.</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="play-now" class="panel game-spotlight">
-            <div class="section-heading section-heading-inline">
-                <div>
-                    <p class="eyebrow">Featured Game</p>
-                    <h2>Play the main fish run right here</h2>
-                    <p class="game-focus-note"><strong>Quick tip:</strong> this gets more fun the second you stop shooting everywhere and start reading one lane at a time.</p>
-                </div>
-                <div class="section-actions">
-                    <button class="button button-ghost" type="button" data-fullscreen-target="game-container">Fullscreen</button>
-                    <a class="button button-secondary" href="./game/">Open Dedicated Game Page</a>
-                </div>
-            </div>
-            <div class="game-shell-grid">
-                <div>
-                    <div class="game-frame">
-                        <div id="game-container" class="game-container game-container-home" aria-label="Ocean Arcade Game playable area"></div>
-                    </div>
-                    <p class="game-hint">Hint: click a little ahead of the fish path, then switch to fullscreen once the screen gets busy and the lower corners start filling up.</p>
-                </div>
-                <aside class="game-side-panel" aria-label="Gameplay quick info">
-                    <div class="game-side-card">
-                        <p class="card-kicker">Quick Start</p>
-                        <h3>Warm up with the middle of the water</h3>
-                        <ul class="feature-list">
-                            <li>Click or tap to fire into the school.</li>
-                            <li>Aim a touch ahead of the quick fish.</li>
-                            <li>Big fish move slower, which makes them better targets when you are settling in.</li>
-                        </ul>
-                    </div>
-                    <div class="game-side-card">
-                        <p class="card-kicker">Small Update</p>
-                        <h3>Mobile touch is cleaner than it was last week</h3>
-                        <p>Desktop fullscreen still feels best, but touch input holds up a lot better now when you just want a quick couch round.</p>
-                    </div>
-                </aside>
-            </div>
-            <div class="game-meta-row">
-                <div class="game-meta-card">
-                    <span class="game-meta-label">Genre</span>
-                    <strong>Fishing Arcade</strong>
-                </div>
-                <div class="game-meta-card">
-                    <span class="game-meta-label">Controls</span>
-                    <strong>Mouse / Touch</strong>
-                </div>
-                <div class="game-meta-card">
-                    <span class="game-meta-label">Best For</span>
-                    <strong>One More Round</strong>
-                </div>
-                <div class="game-meta-card">
-                    <span class="game-meta-label">Today&apos;s Start</span>
-                    <strong>Ocean Hunter</strong>
-                </div>
-            </div>
+            </aside>
         </section>
 
         <section class="panel article-content">
@@ -276,7 +191,7 @@
                     </div>
                     <div class="recommendation-body">
                         <p class="card-kicker">Main Route</p>
-                        <h3><a href="./deep-sea-mode/">Deep Sea Mode</a></h3>
+                        <h3><a href="./play/deep-sea-mode/">Deep Sea Mode</a></h3>
                         <p>Slower, calmer, and better when you want to track the bigger fish instead of rushing every shot.</p>
                     </div>
                 </article>
@@ -286,7 +201,7 @@
                     </div>
                     <div class="recommendation-body">
                         <p class="card-kicker">Fast Route</p>
-                        <h3><a href="./ocean-hunter/">Ocean Hunter</a></h3>
+                        <h3><a href="./play/ocean-hunter/">Ocean Hunter</a></h3>
                         <p>Faster and twitchier. This one feels best when you start predicting movement instead of aiming directly.</p>
                     </div>
                 </article>
@@ -306,7 +221,7 @@
                     </div>
                     <div class="recommendation-body">
                         <p class="card-kicker">Break Route</p>
-                        <h3><a href="./classic-arcade/">Classic Arcade</a></h3>
+                        <h3><a href="./play/classic-arcade/">Classic Arcade</a></h3>
                         <p>A loud little detour with old-machine energy when you need a break from staring at fish lanes.</p>
                     </div>
                 </article>
@@ -432,7 +347,7 @@
 
     <div id="site-footer"></div>
 
-    <script src="./js/site.js?v=20260517-arcade" defer></script>
+    <script src="./js/site.js?v=20260901-gamefirst" defer></script>
     <script src="https://pixijs.download/v8.1.0/pixi.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js" defer></script>
     <script src="./src/ResourceManager.js" defer></script>
